@@ -1,0 +1,1 @@
+Rebuild the Google homepage to practice basic HTML and CSS skills 
