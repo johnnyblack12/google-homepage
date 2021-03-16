@@ -1,9 +1,10 @@
 .content {
 	display: grid;
-	height: 90vh;
-	width: 95vw;
+    margin: 0 auto;
+	height: 95vh;
+	width: 100vw;
 	grid-template-columns: 1fr 600px 1fr;
-	grid-template-rows: 1fr 100px repeat(2, 75px) 2fr;
+	grid-template-rows: 3fr 100px repeat(2, 75px) 5fr;
 	justify-content: center;
 	align-items: center;
 }
@@ -50,12 +51,12 @@
 .mag {
 	height: 20px;
 	width: 20px;
-	padding: 8px 0 0 10px;
+	padding: 12px 0 0 10px;
 }
 
 .mic {
     height: 20px;
-    padding: 8px 16px 0 0;
+    padding: 12px 16px 0 0;
 }
 
 .button-container {
@@ -121,4 +122,126 @@
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
+}
+
+.up-left {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    margin: 3% 0 0 4%;
+}
+
+.up-left-link {
+    display: grid;
+    height: 50%;
+    width: 200px;
+    grid-template-columns: 60px 60px 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.about {
+    grid-area: 1 / 1 / 2 / 2;
+    color: black;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.store {
+    grid-area: 1 / 2 / 2 / 3;
+    color: black;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.up-right {
+    grid-area: 1 / 3 / 2 / 4;
+    justify-self: end;
+    align-self: start;
+    margin: 10px 3% 0 0;
+}
+
+.up-right-item {
+    display: grid;
+    height: 40px;
+    width: 300px;
+    grid-template-columns: 1fr 53px 53px 53px;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    justify-items: end;
+    align-content: start;
+    align-items: center;
+}
+
+.j {
+    grid-area: 1 / 4 / 2 / 5;
+    border-radius: 50%;
+}
+
+.apps {
+    grid-area: 1 / 3 / 2 / 4;
+    height: 24px;
+}
+
+.images {
+    grid-area: 1 / 2 / 2 / 3;
+    color: black;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.gmail {
+    grid-area: 1 / 1 / 2 / 2;
+    color: black;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding-right: 3px;
+}
+
+.bot-grid {
+    display: grid;
+    height: 5vh;
+    width: 98vw;
+    margin: 0 1vw;
+    grid-template-columns: 100px 87px 150px 1fr 76px 68px 81px;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: #70757A;
+    font-size: 14px;
+}
+
+.advertising {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.business {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.how-search {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.carbon {
+    grid-area: 1 / 4 / 2 / 5;
+    padding-right: 9%;
+}
+
+.privacy {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+.terms {
+    grid-area: 1 / 6 / 2 / 7;
+}
+
+.settings {
+    grid-area: 1 / 7 / 2 / 8;
 }
